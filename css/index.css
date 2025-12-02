@@ -1393,7 +1393,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: var(--default-bg);
+  background: url(https://cdn.pixabay.com/photo/2025/03/19/13/20/trees-9480700_1280.jpg);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -6579,48 +6579,14 @@ blockquote.pullquote.right {
   border-radius: 2em !important;
 }
 
-/* 字体引入 */
-@font-face {
-  font-family: YSHST;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: MiSans;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: HYTMR;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: LXGW;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: TTQHB;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: Consolas_1;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
-  font-display: swap;
-}
-
-@font-face {
-  font-family: ZhuZiAWan;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
-  font-display: swap;
-}
+/* 字体引入（移除外链以避免加载错误，使用系统/主题默认字体） */
+/*@font-face { font-family: YSHST; src: url(/fonts/优设好身体.woff2); font-display: swap; }
+@font-face { font-family: MiSans; src: url(/fonts/MiSans.woff2); font-display: swap; }
+@font-face { font-family: HYTMR; src: url(/fonts/HYTangMeiRen55W.woff2); font-display: swap; }
+@font-face { font-family: LXGW; src: url(/fonts/霞鹜文楷.woff2); font-display: swap; }
+@font-face { font-family: TTQHB; src: url(/fonts/甜甜圈海报字体.woff2); font-display: swap; }
+@font-face { font-family: Consolas_1; src: url(/fonts/Consolas.woff2); font-display: swap; }
+@font-face { font-family: ZhuZiAWan; src: url(/fonts/ZhuZiAWan2.woff2); font-display: swap; }*/
 
 /* 特定部件字体调用 */
 div#menus {
@@ -7699,18 +7665,18 @@ button#go-up:hover #percent {
   }
 } */
 
-/* 个人信息卡片背景图 */
+/* 个人信息卡片背景图（使用本地资源/透明背景避免外链404） */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
+  background-image: url(/assets/head.jpg);
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: 100%;
+  background-size: cover;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/aurora.webp);
+  background-image: url(/assets/head.jpg);
   background-repeat: no-repeat;
   background-attachment: inherit;
-  background-size: 100%;
+  background-size: cover;
 }
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
@@ -7771,10 +7737,9 @@ input#pic-link {
   outline: 1px solid var(--theme-color) !important;
 }
 
-/* heo 加载动画头像 */
+/* heo 加载动画头像（改为本地资源） */
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp)
-    no-repeat center center;
+  background: url(/assets/avatar.webp) no-repeat center center;
   background-size: cover;
 }
 
